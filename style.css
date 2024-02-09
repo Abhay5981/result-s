@@ -1,0 +1,155 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: sans-serif;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    max-width: 600px;
+    border-radius: 20px;
+    box-shadow: 1px 0px 20px 2px rgb(0, 0, 0, 0.4);
+}
+.left {
+    color: white;
+    padding: 20px;
+    width: 40%;
+    border-radius: 20px;
+    text-align: center;
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+.right {
+    width: 50%;
+    padding: 20px;
+}
+.left h4 {
+    text-align: center;
+}
+.score-left {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    padding: 50px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background: rgb(66, 7, 230),hsl(241, 81%, 54%);
+   margin: auto;
+   box-shadow:inset 1px 1px 12px 0px;
+   flex-direction: column;
+}
+.big-score {
+    font-size: 50px;
+    font-weight: 800;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.small-score {
+    color: rgb(180, 171, 171);
+    display: flex;
+}
+/* we can also give this in left div */
+.left h3 {                  
+    text-align: center;
+    font-size: 25px;
+}
+.left p {
+    text-align: center;
+}
+.score-con{
+    display: flex;
+    
+}
+.score-reaction {
+display: flex;
+justify-content: space-between;
+background-color: hsla(0, 100%, 67%, 0.1);
+color: hsl(0, 100%, 67%);
+padding: 15px;
+margin-bottom: 15px;
+border-radius: 5px;
+
+}
+.score-con img {
+    margin-right: 5px;
+}
+.grey-text {
+    color: rgba(87, 87, 87, 0.992)
+
+}
+.black-text {
+    color: black;
+    font-weight: bold;
+}
+.score-memory {
+    display: flex;
+    justify-content: space-between;
+    background-color: hsl(39, 63%, 82%);
+    color: hsl(39, 100%, 56%);
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+.score-verbal {
+    display: flex;
+    justify-content: space-between;
+    background-color: hsl(168, 49%, 90%);
+    color: hsl(166, 100%, 37%);
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+.score-visual {
+    display: flex;
+    justify-content: space-between;
+    background-color: hsl(235, 56%, 85%);
+    color: hsl(234, 85%, 45%);
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+button {
+    margin-top: 15px;
+    padding: 15px 30px;
+    border: none;
+    outline: none;
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+}
+@media(max-width: 760px) {
+    .left {
+        width: 100%;
+        padding: 0px;
+        border-radius: 0px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    .right {
+        padding: 0px;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .left-text {
+        padding: 20px;
+        text-align: center;
+    }
+    .container {
+        width: 100%;
+        flex-direction: column;
+        border-radius: 0px;
+        padding: 0px;
+        overflow: hidden;
+    }
+
+}
+
